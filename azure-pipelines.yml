@@ -27,10 +27,6 @@ steps:
     displayName: "Analyze"
 
   - powershell: |
-      .\Build\build.ps1 -TaskList 'Test'
-    displayName: "Test"
-
-  - powershell: |
       .\Build\build.ps1 -TaskList 'UpdateDocumentation'
     displayName: "Update Documentation"
 
