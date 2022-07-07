@@ -1,15 +1,6 @@
 # Build Pipeline
 pool: Default
 
-trigger:
-  batch: true
-
-  # What branches will trigger a build?
-  branches:
-    include:
-      # Any Pull Request merging into the master branch
-      - master
-
 steps:
   # Build Tasks
   - powershell: |
